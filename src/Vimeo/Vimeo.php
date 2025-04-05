@@ -63,7 +63,7 @@ class Vimeo
      * @param string|null $access_token Your access token. Can be found on developer.vimeo.com/apps or generated using OAuth 2.
      * @param TusClientFactory|null $tus_client_interface Your tus client that will be used.
      */
-    public function __construct(string $client_id, string $client_secret, string $access_token = null, TusClientFactory $tus_client_factory = null)
+    public function __construct(string $client_id, string $client_secret, ?string $access_token = null, ?TusClientFactory $tus_client_factory = null)
     {
         $this->_client_id = $client_id;
         $this->_client_secret = $client_secret;
