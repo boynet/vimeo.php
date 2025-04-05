@@ -205,7 +205,7 @@ class Vimeo
      * @param string|null $proxy_port Optional number of port.
      * @param string|null $proxy_userpwd Optional `user:password` authentication.
      */
-    public function setProxy(string $proxy_address, string $proxy_port = null, string $proxy_userpwd = null): void
+    public function setProxy(string $proxy_address, ?string $proxy_port = null, ?string $proxy_userpwd = null): void
     {
         $this->CURL_DEFAULTS[CURLOPT_PROXY] = $proxy_address;
         if ($proxy_port) {
